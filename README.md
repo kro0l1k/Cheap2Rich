@@ -30,16 +30,16 @@ The `Koch_model_data_generation/` subdirectory contains utilities for generating
 - **`rde1d_3_waves.py`** - RDE simulation with 3-wave configuration
 - **`how_to_generate_data.md`** - Instructions for generating new simulation data
 
-the output of `rde1d_3_waves.py` should be a 'Kochs_model_dataset.npy' file which weights over 160MB (hence it is not attached to the submission). It is preprocessed in the first cells of the `baselines_for_results.ipynb` notebook, so running the notebook first is recommended. Alternatively, the preprocessed datasets from both high fidelity and low fidelity simulations are attached and can be found in **`high_fidelity_sim_processed.npy`**, **`Koch_model_processed.npy`** and used for baselines and the Cheap2Rich model.
+the output of `rde1d_3_waves.py` should be a `Kochs_model_dataset.npy` file which weighs over 160MB (hence it is not attached to the submission). It is preprocessed in the first cells of the `baselines_for_results.ipynb` notebook, so running the notebook first is recommended. Alternatively, the preprocessed datasets from both high fidelity and low fidelity simulations are attached and can be found in **`high_fidelity_sim_processed.npy`**, **`Koch_model_processed.npy`** and used for baselines and the Cheap2Rich model.
 
 ## Getting Started
 
-1. Install dependencies:
+1. Install dependencies (the code has been tested with Python 3.13.7):
     ```bash
     pip install -r requirements.txt
     ```
-2. (Optional) Generate data from Koch's model using scripts in `Koch_model_data_generation/`
+2. (Optional) Generate data from Koch's model using scripts in `Koch_model_data_generation/`. Follow the instructions regarding Clawpack and `euler_1D_py.py`. 
 
-3. (Optional, requires 2.)Review the baseline results notebook to understand the approach
+3. (Optional, requires 2.) Review the baseline results notebook to understand the approach
 
 4. Run the main model using `Cheap2Rich.py`

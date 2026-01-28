@@ -367,7 +367,7 @@ def plot_all_fields():
 
     # save the value of the temperature field at each time and location:
     print("saving temperature field data. shape of the matrix: ", T_data.shape)
-    np.save(os.path.join(run_dir, 'temperature_field.npy'), T_data)
+    np.save(os.path.join(run_dir, 'Kochs_model_dataset.npy'), T_data)
 
     # get the last 4 fields
     final_state = claw.frames[-1].state
@@ -472,3 +472,4 @@ def plot_three_fields():
     
 # plot_all_fields()
 plot_three_fields()
+np.save('Kochs_model_dataset.npy', T_data)

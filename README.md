@@ -38,9 +38,8 @@ the output of `rde1d_3_waves.py` should be a 'Kochs_model_dataset.npy' file whic
     ```bash
     pip install -r requirements.txt
     ```
+2. (Optional) Generate data from Koch's model using scripts in `Koch_model_data_generation/`
 
-2. Review the baseline results notebook to understand the approach
+3. (Optional, requires 2.)Review the baseline results notebook to understand the approach
 
-3. Run the main model using `Cheap2Rich.py`
-
-4. (Optional) Generate new training data using scripts in `Koch_model_data_generation/`
+4. Run the main model using `Cheap2Rich.py`
